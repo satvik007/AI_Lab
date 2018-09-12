@@ -1,0 +1,18 @@
+Satvik Choudhary
+111601021
+
+For DFS
+    Use a LIFO queue, put in tuple of (depth, state)
+    Allow dfs to run till a max_depth and the successively increase max_depth
+    (Its not necessary like last week's program because search space is very small.)
+    Use a parent to keep track of the path.
+
+For BFS
+    Just use a normal queue
+    Use a parent to keep track of the path.
+
+For AStar
+    Use a priority queue, put in a tuple of (g + h, g, state)
+    heuristic - h(x) = abs(x - gx) + abs(y - gy)
+    Use a parent to keep track of the path.
+    Use dist instead of parent to keep track of visited nodes.

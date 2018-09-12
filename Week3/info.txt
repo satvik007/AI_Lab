@@ -1,0 +1,14 @@
+Satvik Choudhary
+111601021
+
+The idea is to index the directions as 3 lists
+
+dx = [-1, 1, 0, 0, 0, 0]
+dy = [0, 0, -1, 1, 0, 0]
+dz = [0, 0, 0, 0, -1, 1]
+
+to determine direction we take a random number and then that number determine which of these is added to the current location.
+e.g. If the random number is 0 then (0, 0, 0) becomes (-1, 0, 0)
+If the random number is 1 then (0, 0, 0) becomes (1, 0, 0)
+
+

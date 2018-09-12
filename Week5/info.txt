@@ -1,0 +1,20 @@
+Satvik Choudhary
+111601021
+
+For DFS
+    Use a LIFO queue, put in tuple of (depth, state_array, zero_location)
+    Allow dfs to run till a max_depth and the successively increase max_depth
+    Use a parent to keep track of the path.
+
+For BFS
+    Just use a normal queue, put in tuple of (depth, state_array, zero_location)
+    Use a parent to keep track of the path.
+
+For AStar
+    Use a priority queue, put in a tuple of ((g + h, g, _hash_of_string), (state_array, empty_square_location))
+    First part of the tuple is for priority, next part is the state
+    _hash is necessary in priority because np arrays can't be compared directly but its hash can be.
+    (Its not a hash in reality but just converting the np array to a string)
+    heuristic - h(x) = abs(x - gx) + abs(y - gy) Manhattan distance.
+    Use a parent to keep track of the path.
+    Use dist instead of parent to keep track of visited nodes.
