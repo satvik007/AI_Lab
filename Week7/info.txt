@@ -1,0 +1,8 @@
+Satvik Choudhary
+111601021
+
+Instead of putting unnecessary effort in reading xlsx file, converted it manually to .txt file.
+Applying A star algorithm, we are trying to minimize time. 
+Taking heuristic value as the minTime = euclidean distance / max(v_cyc, v_bus)
+Storing the parent value of a state in a dict - parent and then printing the path.
+Code is running all the 3 cases.

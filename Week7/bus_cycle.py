@@ -20,13 +20,13 @@ class Environment:
 
     def __init__ (self, congest, budget, cost, n):
 
-        self.v1 = 25
+        self.v1 = 25 # cycle speed
         if congest == 0:
             self.v2 = 50
         elif congest == 1:
             self.v2 = 37.5
         elif congest == 2:
-            self.v2 = 10
+            self.v2 = 10 # bus speed
 
         self.budget = budget
         self.cost = cost
