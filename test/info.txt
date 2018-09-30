@@ -1,0 +1,16 @@
+Satvik Choudhary
+111601021
+
+Please use in.txt file for input as done.
+
+The program is a simple a Star search with a complex heuristic.
+
+The heuristic is designed in such a way that probably a human might think. It gives a very large priority for the upper 
+line completely done or the left line completely done and so on.
+For n = 3, the heuristic is mostly similar to manhattan one, but with the difference that there is a very large penalty for
+1 being far from its location.
+
+Then in the loop where we pop elements out of the priority queue, 
+there are 2 blocks 
+1st one considers one of the empty spaces being moved in each of the 4 directions.
+2nd block considers the other space being moved in each of the 4 directions. 
